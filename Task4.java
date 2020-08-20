@@ -13,7 +13,7 @@ public class Task4 {
         char[] bin_arr = bin.toCharArray();
         int int2 = 0;
         for (int i =0 ; i <= bin_arr.length-1; i++){
-            int2+=(bin_arr[i]-'0')*2 << (bin_arr.length-i-2);
+            int2+=(bin_arr[i]-'0') << (bin_arr.length-i-1);
         }
         System.out.printf("Десятичное число: %d \n", int2);
     }
